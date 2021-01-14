@@ -2,7 +2,7 @@
 The R package source code and a demo script of scKinetics
 
 1. install the OGFSC R package from https://github.com/XZouProjects/OGFSC-R, and all the associated packages.
-2. download demo data
+2. download demo data: data1 and data2
 3. run the script: run_OGFSC_demo.R
 General parameters:
 data - scRNA-seq data with genes vs cells
