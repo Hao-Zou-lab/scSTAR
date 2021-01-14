@@ -1,9 +1,9 @@
 # scKinetics
 The R package source code and a demo script of scKinetics
 
-install the OGFSC R package from https://github.com/XZouProjects/OGFSC-R
-download demo data
-run the script: run_OGFSC_demo.R
+1. install the OGFSC R package from https://github.com/XZouProjects/OGFSC-R, and all the associated packages.
+2. download demo data
+3. run the script: run_OGFSC_demo.R
 General parameters:
 data - scRNA-seq data with genes vs cells
 nBins - number of bins to construct MLM model
