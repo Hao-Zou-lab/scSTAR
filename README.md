@@ -10,12 +10,12 @@ dowaload the file 'scKinetics_0.1.3.tar.gz' and install the package from local p
 download demo data: data1 and data2
 
 # Step 3: run scKinetics
-library(R.matlab)
-library(OGFSC)
-library(FNN)
-library(MASS)
-library(tsne)
-library(scKinetics)
+library(R.matlab)                                         
+library(OGFSC)                                            
+library(FNN)                                  
+library(MASS)                                     
+library(tsne)                                           
+library(scKinetics)                                               
 
 ## load data
 data = readMat('data1.mat')                                                                                        
