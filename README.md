@@ -18,8 +18,8 @@ library(tsne)
 library(scKinetics)
 
 ## load data
-data = readMat('data1.mat')
-data1 <- as.matrix((data$data1))
+data = readMat('data1.mat')                                                                                        
+data1 <- as.matrix((data$data1))       
 data = readMat('data2.mat')
 data2 <- as.matrix((data$data2))
 geneList <- as.matrix(unlist(data$geneList))
