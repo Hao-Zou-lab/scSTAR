@@ -25,10 +25,10 @@ data2 <- as.matrix((data$data2))
 geneList <- as.matrix(unlist(data$geneList))
 
 ## gene filtering 
-OGFSC_idx_1 = OGFSC(data1, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx  
-OGFSC_idx_2 = OGFSC(data2, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx 
-idx_OGFSC = intersect(OGFSC_idx_1, OGFSC_idx_2)  
-Ctr_filtered = data1[idx_OGFSC,]  
-Case_filtered = data2[idx_OGFSC,]  
- 
+OGFSC_idx_1 = OGFSC(data1, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx      
+OGFSC_idx_2 = OGFSC(data2, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx      
+idx_OGFSC = intersect(OGFSC_idx_1, OGFSC_idx_2)      
+Ctr_filtered = data1[idx_OGFSC,]    
+Case_filtered = data2[idx_OGFSC,]      
+   
 The demo script includes OGFSC based gene filtering, scKinetics data processing and k-means clustering on the processed data.
