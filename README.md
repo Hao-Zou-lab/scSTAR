@@ -48,9 +48,9 @@ idx_DE_up = out$idx_DE_up
 ## auto clustering
 Although the processed case data (out$Case_kinetics) and control data (out$Ctr_kinetics) could be analyzed by most of existing methods, we also incorporate a k-means based clustering method for data interpretation. The markerGenes are the list of DE genes (e.g., idx_DE_up) associated with each data cluster (e.g., Case_kinetics). 
 
-K = 3 
-out2 = autoClustering(Case_kinetics, K, geneList[idx_OGFSC], idx_DE_up) 
-clusterIdx = out2$clusterIdx
+K = 3                                                          
+out2 = autoClustering(Case_kinetics, K, geneList[idx_OGFSC], idx_DE_up)                                                 
+clusterIdx = out2$clusterIdx                                                                  
 markerGenes = out2$markerGenes
 
 
