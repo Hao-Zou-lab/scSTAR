@@ -41,9 +41,9 @@ anchorCells = findAnchors(Ctr_filtered, Case_filtered, 3)
 ## single-cell kinetics estimation
 The function to estimate individual cell kinetics. When PLScomp = 0, the number of PLScomp can be automatically estimated. But it can also be manually setted. The users are suggested to explore the values from 2-5.
   
-out = scKinetics(Ctr_filtered, Case_filtered, anchorCells, PLScomp = 4) 
-Case_kinetics = out$Case_kinetics
-idx_DE_up = out$idx_DE_up
+out = scKinetics(Ctr_filtered, Case_filtered, anchorCells, PLScomp = 4)                                                             
+Case_kinetics = out$Case_kinetics                                                   
+idx_DE_up = out$idx_DE_up                                 
 
 ## auto clustering
 Although the processed case data (out$Case_kinetics) and control data (out$Ctr_kinetics) could be analyzed by most of existing methods, we also incorporate a k-means based clustering method for data interpretation. The markerGenes are the list of DE genes (e.g., idx_DE_up) associated with each data cluster (e.g., Case_kinetics). 
