@@ -35,8 +35,16 @@ Case_filtered = data2[idx_OGFSC,]
 
 ## identify anchor cells using KNN
 The number indicates the number of nearest cells. By default 3. Although the users are free to change such number, tha authors recommond to keep it. 
-
+                                                                            
 anchorCells = findAnchors(Ctr_filtered, Case_filtered, 3) 
+
+## single-cell kinetics estimation
+The function to estimate individual cell kinetics. When PLScomp = 0, the number of PLScomp can be automatically estimated. But it can also be manually setted. The users are suggested to explore the values from 2-5.
+
+                       
+out = scKinetics(Ctr_filtered, Case_filtered, anchorCells, PLScomp = 4) 
+Case_kinetics = out$Case_kinetics
+idx_DE_up = out$idx_DE_up
 
 The demo script includes OGFSC based gene filtering, scKinetics data processing and k-means clustering on the processed data.
 
