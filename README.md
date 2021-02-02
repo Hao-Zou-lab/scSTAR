@@ -1,7 +1,13 @@
 # scKinetics
 The R package source code and a demo script of scKinetics
 
+Step 1: intallation
 1. install the OGFSC R package from https://github.com/XZouProjects/OGFSC-R, and all the associated packages.
+2. Installing scKinetics from github
+library(devtools)
+install_github("XZouProjects/scKinetics")
+
+
 2. download demo data: data1 and data2
 3. run the script: run_demo_scK.R
 
