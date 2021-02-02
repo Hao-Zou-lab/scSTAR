@@ -32,5 +32,16 @@ OGFSC_idx_2 = OGFSC(data2, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx
 idx_OGFSC = intersect(OGFSC_idx_1, OGFSC_idx_2)      
 Ctr_filtered = data1[idx_OGFSC,]    
 Case_filtered = data2[idx_OGFSC,]      
-   
+
+## identify anchor cells using KNN
+The number indicates the number of nearest cells. By default 3. Although the users are free to change such number, tha authors recommond to keep it. 
+
+anchorCells = findAnchors(Ctr_filtered, Case_filtered, 3) 
+
 The demo script includes OGFSC based gene filtering, scKinetics data processing and k-means clustering on the processed data.
+
+
+
+
+
+
