@@ -25,6 +25,8 @@ data2 <- as.matrix((data$data2))
 geneList <- as.matrix(unlist(data$geneList))
 
 ## gene filtering 
+This step can reduce the interferences of random noise by removing noise corrupted genes
+
 OGFSC_idx_1 = OGFSC(data1, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx      
 OGFSC_idx_2 = OGFSC(data2, nBins = 30, alpha=0.5, plot_option = 1)$OGFSC_idx      
 idx_OGFSC = intersect(OGFSC_idx_1, OGFSC_idx_2)      
