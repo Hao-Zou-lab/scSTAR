@@ -1,21 +1,21 @@
-# scKinetics
-Single-cell RNA sequencing has revolutionised our ability of interrogating gene expression at single-cell resolution, which allows detailed study of tumorigenesis and consequences of treatment. A critical component in understanding the impact of treatment is to measure changes in mRNA levels of individual cells between different conditions. Such measurements are often challenging due to practical limitation as each cell can only be profiled within a specific condition. Here we present, scKinetics, a novel algorithm that mathematically models the cell kinetics of interest by generating a latent virtual projection of each actual cell between conditions. Using simulated and experimental data, we showed scKinetics can reliably extract weak biological signals and promote biological discovery. It enabled the discovery of a new prognosis-associated cellular subtype in Head and neck cancer and an unknown aging-related bifurcation pattern of immune cells. Furthermore, its clinical potential is demonstrated in an immunotherapy study where therapy-response prediction accuracy was improved. 
+# scSTAR
+Single-cell RNA sequencing has revolutionised our ability of interrogating gene expression at single-cell resolution, which allows detailed study of tumorigenesis and consequences of treatment. A critical component in understanding the impact of treatment is to measure changes in mRNA levels of individual cells between different conditions. Such measurements are often challenging due to practical limitation as each cell can only be profiled within a specific condition. Here we present, scSTAR, a novel algorithm that mathematically models the cell kinetics of interest by generating a latent virtual projection of each actual cell between conditions. Using simulated and experimental data, we showed scSTAR can reliably extract weak biological signals and promote biological discovery. It enabled the discovery of a new prognosis-associated cellular subtype in Head and neck cancer and an unknown aging-related bifurcation pattern of immune cells. Furthermore, its clinical potential is demonstrated in an immunotherapy study where therapy-response prediction accuracy was improved. 
 
 # Step 1: intallation
 1. install the OGFSC R package from https://github.com/XZouProjects/OGFSC-R, and all the associated packages.
-2. Installing scKinetics from github:
+2. Installing scSTAR from github:
 dowaload the file 'scKinetics_0.1.3.tar.gz' and install the package from local path.
 
 # Step 2: prepare testing data
 download demo data: data1 and data2
 
-# Step 3: run scKinetics
+# Step 3: run scSTAR
 library(R.matlab)                                         
 library(OGFSC)                                            
 library(FNN)                                  
 library(MASS)                                     
 library(tsne)                                           
-library(scKinetics)                                               
+library(scSTAR)                                               
 
 ## load data
 data = readMat('data1.mat')                                                                                        
