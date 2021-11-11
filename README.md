@@ -26,10 +26,10 @@ geneList <- as.matrix(unlist(data$geneList))
 This step can reduce the interferences of random noise by removing noise corrupted genes
 
 ## gene filtering
-data <- cbind(data1, data2)
-idx_OGFSC = filter_gene(data, nBins = 20, plot_option = 1)$OGFSC_idx
-Ctr_filtered = data1[idx_OGFSC,] 
-Case_filtered = data2[idx_OGFSC,] 
+data <- cbind(data1, data2)                                                                      
+idx_OGFSC = filter_gene(data, nBins = 20, plot_option = 1)$OGFSC_idx                                                                   
+Ctr_filtered = data1[idx_OGFSC,]                      
+Case_filtered = data2[idx_OGFSC,]                 
 
 
 ## identify anchor cells using KNN
