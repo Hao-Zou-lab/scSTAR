@@ -12,7 +12,7 @@ download demo data: data1 and data2
 # Step 3: run scSTAR
 library(R.matlab)                                                                           
 library(tsne)                                           
-library(scSTAR)
+library(scSTAR)         
 library(pls)
 
 ## load data
