@@ -4,7 +4,7 @@ Single-cell RNA sequencing has revolutionised our ability of interrogating gene 
 # Step 1: intallation
 1. install 'pls', 'tsne' and 'R.matlab' R package from Cran.
 2. Installing scSTAR from github:
-dowaload the file 'scKinetics_0.1.3.tar.gz' and install the package from local path.
+dowaload the file 'scSTAR_0.1.0.tar.gz' and install the package from local path.
 
 # Step 2: prepare testing data
 download demo data: data1 and data2
