@@ -10,10 +10,7 @@ Single-cell RNA sequencing has revolutionised our ability of interrogating gene 
 2. Installing scSTAR from github:
 dowaload the file 'scSTAR_0.1.1.tar.gz' and install the package from local path.
 
-# Step 2: prepare testing data
-download demo data: data1 and data2
-
-# Step 3: run scSTAR
+# Step 2: run scSTAR
 
     library(R.matlab)                                                                           
     library(tsne)                                           
