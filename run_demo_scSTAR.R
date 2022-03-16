@@ -5,10 +5,14 @@ library(pls)
 
 setwd("G:/algorithms/scIdentify/tidy scSTAR/R package")
 
-data = readMat('data1.mat') # control data
-data1 <- as.matrix((data$data1))
-data = readMat('data2.mat') # case data
-data2 <- as.matrix((data$data2))
+extdir<-system.file("extdata",package="scSTAR")
+
+data=readMat(paste0(extdir,'/demo_data.mat'))
+
+data1 <- as.matrix((data$data1))#control data
+    
+data2 <- as.matrix((data$data2))#case  data
+
 geneList <- as.matrix(unlist(data$geneList))
 
 ## gene filtering
