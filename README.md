@@ -11,8 +11,7 @@ Single-cell RNA sequencing has revolutionised our ability of interrogating gene 
 dowaload the file 'scSTAR_0.1.1.tar.gz' and install the package from local path.
 
 # Step 2: run scSTAR
-
-    library(R.matlab)                                                                           
+                                                                        
     library(tsne)                                           
     library(scSTAR)         
     library(pls)
