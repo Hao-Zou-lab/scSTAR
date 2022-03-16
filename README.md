@@ -5,13 +5,14 @@ Single-cell RNA sequencing has revolutionised our ability of interrogating gene 
 
 # Step 1: intallation
 
-1. install 'pls' and 'tsne' R package from Cran.
+1. install 'pls', 'tsne', 'R.matlab' R package from Cran.
  
 2. Installing scSTAR from github:
 dowaload the file 'scSTAR_0.1.1.0.tar.gz' and install the package from local path.
 
 # Step 2: run scSTAR
-                                                                        
+
+    library(R.matlab)                                                                    
     library(tsne)                                           
     library(scSTAR)         
     library(pls)
