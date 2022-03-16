@@ -22,12 +22,12 @@ download demo data: data1 and data2
 
 ## load data
 
-    data = readMat('data1.mat')  
+    extdir<-system.file("extdata",package="scSTAR")
     
+    data=readMat(paste0(extdir,'/demo_data.mat'))
+   
     data1 <- as.matrix((data$data1))  
-    
-    data = readMat('data2.mat')     
-    
+        
     data2 <- as.matrix((data$data2))   
     
     geneList <- as.matrix(unlist(data$geneList))
