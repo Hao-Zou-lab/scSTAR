@@ -1,0 +1,11 @@
+Package: scSTAR
+Version: 0.1.1
+Author: Jie Hao, Xin Zou
+Maintainer: Jie Hao <jhao@Fudan.edu.cn>
+Title: scSTAR
+Description: 
+Depends: FNN, MASS, tsne
+License: GPL-2
+LazyLoad: yes
+Packaged: 2021-11-11 06:26:07 UTC; album
+NeedsCompilation: no
